@@ -6,6 +6,10 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed = 5;
+    [SerializeField] private AudioSource troll;
+    [SerializeField] private AudioSource koming;
+    [SerializeField] private AudioSource Heartbeat;
+
 
     private void FixedUpdate()
     {
@@ -19,5 +23,18 @@ public class EnemyMovement : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        if (other.gameObject.tag == "Troll")
+        {
+            troll.Play();
+        }
+        if (other.gameObject.tag == "Coming")
+        {
+            koming.Play();
+        }
+        if (other.gameObject.tag == "Heartbeat")
+        {
+            Heartbeat.Play();
+        }
+
     }
 }
