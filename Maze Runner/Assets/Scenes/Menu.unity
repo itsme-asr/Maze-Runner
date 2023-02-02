@@ -188,7 +188,7 @@ MonoBehaviour:
     m_MinSize: 1
     m_MaxSize: 200
     m_Alignment: 4
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 679373862}
   - component: {fileID: 679373861}
   - component: {fileID: 679373860}
+  - component: {fileID: 679373863}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -285,6 +286,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679373863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679373859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe345e616fd0044a9635118d733e447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1311068932
 GameObject:
   m_ObjectHideFlags: 0
