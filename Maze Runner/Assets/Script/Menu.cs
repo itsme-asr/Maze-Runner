@@ -5,9 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    void Update()
+    [SerializeField] private SpriteRenderer entrance;
+    private float sub = .1f;
+    private void Start()
     {
 
+        //Destroy(entrance, 2f);
+    }
+
+    void Update()
+    {
+        entrance.color = new Color(0, 0, 0, 1 - sub * Time.deltaTime);
+        sub = sub + .1f;
         spaceNext();
     }
 
