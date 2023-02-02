@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private AudioSource troll;
     [SerializeField] private AudioSource koming;
     [SerializeField] private AudioSource Heartbeat;
-
+    [SerializeField] private AudioSource Angry;
 
     private void FixedUpdate()
     {
@@ -35,6 +35,12 @@ public class EnemyMovement : MonoBehaviour
         {
             Heartbeat.Play();
         }
+        if (other.gameObject.tag == "Angry")
+        {
+            Angry.Play();
+        }
+
+
 
     }
 }
