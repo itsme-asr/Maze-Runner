@@ -7,18 +7,9 @@ public class cameraShake : MonoBehaviour
     [SerializeField] public bool start = false;
     public float duration = .5f;
 
-    public void Update()
-    {
-        startShake();
-    }
-
     public void startShake()
     {
-        if (start)
-        {
-            start = false;
-            StartCoroutine(shaking());
-        }
+        StartCoroutine(shaking());
     }
     IEnumerator shaking()
     {
