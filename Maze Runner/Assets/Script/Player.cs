@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         movement();
+        //dashMovement();
     }
 
     private void movement()
@@ -28,4 +29,14 @@ public class Player : MonoBehaviour
             rb.MovePosition(rb.position + new Vector2(0f, movDirx));
         }
     }
+
+    // private void dashMovement()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         var pos = transform.position;
+
+    //         pos = pos.x * new Vector3(4f * Time.deltaTime, 0, 0);
+    //     }
+    // }
 }
