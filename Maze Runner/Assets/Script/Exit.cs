@@ -10,7 +10,7 @@ public class Exit : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Instantiate(nextLevelEffect, transform.position, Quaternion.identity);
-            Invoke("nextLevel", 2.5f);
+            Invoke("nextLevel", 1.5f);
             Debug.Log("N e x t L e v e l");
         }
     }
