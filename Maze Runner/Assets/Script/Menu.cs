@@ -26,5 +26,12 @@ public class Menu : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("End Game");
+            Application.Quit();
+        }
+
     }
 }
